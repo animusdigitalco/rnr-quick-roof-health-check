@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quick Roof Health Check | R&R Roofing and Construction — Tulsa, OK</title>
+<meta name="description" content="Answer 6 quick questions from the ground and get your free roof health score. No ladder required. R&R Roofing and Construction, Tulsa OK.">
+
+<!-- Facebook Pixel Code -->
+<!-- FB_PIXEL_ID -->
+<!-- End Facebook Pixel Code -->
+
+<!-- Ahrefs Analytics -->
+<!-- AHREFS_ANALYTICS_CODE -->
+<!-- End Ahrefs Analytics -->
+
+<!-- Google Analytics / GTM -->
+<!-- GA_TRACKING_CODE -->
+<!-- End Google Analytics -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --dark: #24262b;
+  --teal: #a1cbce;
+  --blue: #00aeef;
+  --bg: #f4f5f9;
+  --white: #ffffff;
+  --green: #2ecc71;
+  --yellow: #f39c12;
+  --orange: #e67e22;
+  --red: #e74c3c;
+  --radius: 20px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--dark);
+  background: var(--bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Header ── */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--white);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header img {
+  height: 44px;
+  width: auto;
+}
+.header a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--dark);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.header a:hover { color: var(--blue); }
+
+/* ── Layout ── */
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+  min-height: calc(100vh - 68px);
+}
+
+/* ── Screens ── */
+.screen {
+  display: none;
+  animation: fadeUp 0.35s ease;
+}
+.screen.active { display: block; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Intro ── */
+.intro-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 40px 28px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  margin-top: 20px;
+}
+.intro-card h1 {
+  font-family: 'Cardo', serif;
+  font-size: 2rem;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+.intro-card .subtitle {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 28px;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg);
+  border-radius: 12px;
+  padding: 14px 18px;
+  text-align: left;
+}
+.feature-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.feature span {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  display: inline-block;
+  background: var(--blue);
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  text-decoration: none;
+  width: 100%;
+  max-width: 360px;
+}
+.btn-primary:hover { background: #0098d0; transform: translateY(-1px); }
+.btn-primary:active { transform: translateY(0); }
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: #666;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+.btn-secondary:hover { color: var(--dark); background: rgba(0,0,0,0.04); }
+
+/* ── Progress ── */
+.progress-wrapper {
+  margin-bottom: 28px;
+}
+.progress-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+.progress-bar {
+  height: 6px;
+  background: #e0e2e8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--blue);
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+/* ── Question Cards ── */
+.question-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.question-card h2 {
+  font-family: 'Cardo', serif;
+  font-size: 1.45rem;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+.answer-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.answer-card {
+  background: var(--bg);
+  border: 2px solid transparent;
+  border-radius: 14px;
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.answer-card:hover { border-color: var(--teal); background: #eef6f7; }
+.answer-card.selected { border-color: var(--blue); background: #e8f7fd; }
+.answer-card .check-circle {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.answer-card.selected .check-circle {
+  border-color: var(--blue);
+  background: var(--blue);
+}
+.answer-card.selected .check-circle::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--white);
+  border-radius: 50%;
+}
+/* Multi-select toggle */
+.answer-card.multi .check-circle {
+  border-radius: 6px;
+}
+.answer-card.multi.selected .check-circle {
+  border-radius: 6px;
+}
+.answer-card.multi.selected .check-circle::after {
+  content: '✓';
+  background: none;
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+}
+
+.question-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+.question-nav .btn-primary {
+  width: auto;
+  padding: 14px 32px;
+  font-size: 0.95rem;
+}
+
+/* ── Contact Gate ── */
+.gate-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 36px 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  text-align: center;
+}
+.gate-card h2 {
+  font-family: 'Cardo', serif;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+.gate-card .gate-sub {
+  color: #666;
+  margin-bottom: 28px;
+  font-size: 0.95rem;
+}
+.form-group {
+  margin-bottom: 14px;
+  text-align: left;
+}
+.form-group label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #888;
+  margin-bottom: 6px;
+}
+.form-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e0e2e8;
+  border-radius: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  background: var(--bg);
+}
+.form-group input:focus {
+  outline: none;
+  border-color: var(--blue);
+  background: var(--white);
+}
+.form-group input.error {
+  border-color: var(--red);
+}
+.gate-card .btn-primary {
+  margin-top: 8px;
+}
+.trust-signals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #999;
+}
+.trust-signals span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ── Results ── */
+.results-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 36px 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.score-badge {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+}
+.score-badge .score-num {
+  font-family: 'Cardo', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.score-badge .score-of {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  opacity: 0.85;
+}
+.tier-name {
+  font-family: 'Cardo', serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.tier-desc {
+  text-align: center;
+  color: #555;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Health bar */
+.health-bar-wrapper {
+  margin-bottom: 28px;
+}
+.health-bar-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #999;
+  margin-bottom: 8px;
+}
+.health-bar {
+  height: 12px;
+  background: linear-gradient(to right, var(--green), var(--yellow), var(--orange), var(--red));
+  border-radius: 6px;
+  position: relative;
+}
+.health-bar-marker {
+  position: absolute;
+  top: -4px;
+  width: 20px;
+  height: 20px;
+  background: var(--white);
+  border: 3px solid var(--dark);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transition: left 0.6s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.health-bar-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+/* Answer breakdown */
+.breakdown { margin: 24px 0; }
+.breakdown-item {
+  border-bottom: 1px solid #eee;
+  padding: 16px 0;
+}
+.breakdown-item:last-child { border-bottom: none; }
+.breakdown-q {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 4px;
+}
+.breakdown-a {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+.breakdown-note {
+  font-size: 0.85rem;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* Oklahoma callout */
+.ok-callout {
+  background: linear-gradient(135deg, #f0f7f8, #e8f4f5);
+  border-left: 4px solid var(--teal);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 24px 0;
+}
+.ok-callout strong {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+.ok-callout p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* CTA block */
+.results-cta {
+  text-align: center;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #eee;
+}
+.results-cta h3 {
+  font-family: 'Cardo', serif;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+.results-cta .cta-phone {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--blue);
+  text-decoration: none;
+  margin: 12px 0;
+  transition: color 0.2s;
+}
+.results-cta .cta-phone:hover { color: #0098d0; }
+.results-cta .cta-sub {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 20px;
+}
+.results-cta .btn-primary {
+  max-width: 320px;
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-top: 24px;
+  line-height: 1.5;
+}
+
+/* ── Responsive ── */
+@media (min-width: 480px) {
+  .intro-card { padding: 48px 36px; }
+  .intro-card h1 { font-size: 2.4rem; }
+  .question-card { padding: 36px 32px; }
+  .gate-card { padding: 40px 32px; }
+  .results-card { padding: 40px 32px; }
+  .features { flex-direction: row; gap: 10px; }
+  .feature { flex: 1; flex-direction: column; text-align: center; padding: 16px 12px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <a href="https://rnrroofingok.com">
+    <img src="https://rnrroofingok.com/wp-content/uploads/2026/01/R-R-768x481.png" alt="R&R Roofing and Construction">
+  </a>
+  <a href="tel:9183793710">(918) 379-3710</a>
+</header>
+
+<div class="container">
+
+  <!-- SCREEN: Intro -->
+  <div class="screen active" id="screen-intro">
+    <div class="intro-card">
+      <h1>How Healthy Is Your Roof?</h1>
+      <p class="subtitle">6 quick questions. No ladder required.<br>Get your roof health score in under 2 minutes.</p>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">👀</div>
+          <span>See from the ground</span>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⏱️</div>
+          <span>Takes 90 seconds</span>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">📋</div>
+          <span>Free personalized report</span>
+        </div>
+      </div>
+      <button class="btn-primary" onclick="startQuiz()">Check My Roof</button>
+    </div>
+  </div>
+
+  <!-- SCREEN: Questions -->
+  <div class="screen" id="screen-questions">
+    <div class="progress-wrapper">
+      <div class="progress-label">Question <span id="q-current">1</span> of 6</div>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:16.66%"></div></div>
+    </div>
+    <div class="question-card">
+      <h2 id="q-text"></h2>
+      <div class="answer-options" id="answer-options"></div>
+      <div class="question-nav">
+        <button class="btn-secondary" id="btn-back" onclick="prevQuestion()">← Back</button>
+        <button class="btn-primary" id="btn-next" onclick="nextQuestion()" style="display:none;">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN: Contact Gate -->
+  <div class="screen" id="screen-gate">
+    <div class="gate-card">
+      <div style="font-size:2.2rem;margin-bottom:8px;">🎉</div>
+      <h2>Your Roof Health Report Is Ready!</h2>
+      <p class="gate-sub">Enter your info below to see your personalized score and recommendations.</p>
+      <form id="gate-form" onsubmit="submitGate(event)">
+        <div class="form-group">
+          <label for="gate-name">First Name</label>
+          <input type="text" id="gate-name" placeholder="First name" required>
+        </div>
+        <div class="form-group">
+          <label for="gate-phone">Phone</label>
+          <input type="tel" id="gate-phone" placeholder="(555) 123-4567" required>
+        </div>
+        <div class="form-group">
+          <label for="gate-email">Email</label>
+          <input type="email" id="gate-email" placeholder="you@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="gate-address">Address</label>
+          <input type="text" id="gate-address" placeholder="123 Main St, Tulsa, OK" required>
+        </div>
+        <button type="submit" class="btn-primary">See My Score</button>
+      </form>
+      <div class="trust-signals">
+        <span>🔒 Secure & private</span>
+        <span>📵 No spam, ever</span>
+        <span>🏠 100% free</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN: Results -->
+  <div class="screen" id="screen-results">
+    <div class="results-card">
+      <div class="score-badge" id="score-badge">
+        <span class="score-num" id="score-num">0</span>
+        <span class="score-of">of 24</span>
+      </div>
+      <div class="tier-name" id="tier-name"></div>
+      <p class="tier-desc" id="tier-desc"></p>
+
+      <div class="health-bar-wrapper">
+        <div class="health-bar-label">Roof Health Meter</div>
+        <div class="health-bar">
+          <div class="health-bar-marker" id="health-marker" style="left:0%"></div>
+        </div>
+        <div class="health-bar-labels">
+          <span>Healthy</span>
+          <span>Watch</span>
+          <span>Attention</span>
+          <span>Action</span>
+        </div>
+      </div>
+
+      <div class="breakdown" id="breakdown"></div>
+
+      <div class="ok-callout">
+        <strong>Oklahoma Weather Context</strong>
+        <p>Oklahoma averages 3–5 hail events per year. Even roofs that look fine from the ground often have hidden damage.</p>
+      </div>
+
+      <div class="results-cta">
+        <h3>Get Your FREE Professional Roof Inspection</h3>
+        <a href="tel:9183793710" class="cta-phone">(918) 379-3710</a>
+        <p class="cta-sub">Most inspections take 30–45 minutes and cost you nothing.</p>
+        <a href="tel:9183793710" class="btn-primary" style="display:inline-block;">Call Now — Free Inspection</a>
+      </div>
+
+      <p class="disclaimer">This quiz is for informational purposes only and does not constitute a professional roof inspection. Results are based solely on your self-reported answers. For an accurate assessment, schedule a professional inspection with a licensed roofing contractor.</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ── Questions Data ──
+const questions = [
+  {
+    text: "How old is your roof?",
+    multi: false,
+    options: [
+      { label: "Less than 5 years", score: 0 },
+      { label: "5–10 years", score: 1 },
+      { label: "10–15 years", score: 2 },
+      { label: "15–20 years", score: 3 },
+      { label: "20+ years", score: 4 },
+      { label: "I don't know", score: 2 }
+    ],
+    notes: {
+      0: "Great — your roof is relatively new and should be in solid shape.",
+      1: "Still in its prime, but keep an eye out as wear begins.",
+      2: "Entering the middle of its lifespan. Worth a check-up.",
+      3: "At this age, deterioration accelerates. Annual inspections are key.",
+      4: "Most shingle roofs are nearing end-of-life at 20+ years.",
+      5: "Not knowing your roof's age is a risk factor on its own. A pro can help determine it."
+    }
+  },
+  {
+    text: "Stand in your yard and look up. What do you see?",
+    multi: false,
+    options: [
+      { label: "Everything looks flat, uniform, and clean", score: 0 },
+      { label: "A few areas look uneven, patchy, or discolored", score: 2 },
+      { label: "I can see missing, cracked, or curling shingles", score: 4 },
+      { label: "I honestly haven't looked recently", score: 1 }
+    ],
+    notes: {
+      0: "A uniform roofline is a good sign — no obvious surface issues.",
+      1: "Uneven or discolored patches can indicate aging, algae, or hidden damage.",
+      2: "Visible shingle damage is a clear signal your roof needs professional attention.",
+      3: "Not checking leaves potential damage unnoticed. A quick look can reveal a lot."
+    }
+  },
+  {
+    text: "Check your ceilings and upper walls inside. Any water stains, bubbling, or discoloration?",
+    multi: false,
+    options: [
+      { label: "Nope, everything looks clean", score: 0 },
+      { label: "I've noticed a spot or two", score: 2 },
+      { label: "Yes, there are noticeable stains or damage", score: 4 },
+      { label: "I'm not sure / haven't checked", score: 1 }
+    ],
+    notes: {
+      0: "Clean ceilings are a positive sign — no signs of active leaks.",
+      1: "Even small water spots can indicate a slow leak that could worsen.",
+      2: "Interior staining typically means water is getting through. This needs attention.",
+      3: "It's worth checking — interior damage is one of the clearest signs of a roof issue."
+    }
+  },
+  {
+    text: "After the last big storm, did you notice any of these?",
+    multi: true,
+    options: [
+      { label: "Shingle pieces or dark granules in the yard", score: 2 },
+      { label: "Dents on gutters, AC unit, or mailbox", score: 2 },
+      { label: "Damaged window screens", score: 2 },
+      { label: "Neighbors getting roof work done", score: 2 },
+      { label: "None of these", score: 0, exclusive: true }
+    ],
+    notes: {
+      0: "Loose granules mean shingles are breaking down — a sign of storm or age-related damage.",
+      1: "Dents on metal surfaces suggest hail impact, which likely hit your roof too.",
+      2: "Damaged screens are a telltale sign of significant hail — your roof probably took hits.",
+      3: "If neighbors are getting work done, your roof likely experienced the same storm damage.",
+      4: "Good — no post-storm red flags. That's a positive sign."
+    }
+  },
+  {
+    text: "Do your gutters look straight and solid, or are they sagging, pulling away, or clogged?",
+    multi: false,
+    options: [
+      { label: "They look good", score: 0 },
+      { label: "They're a little rough but functional", score: 1 },
+      { label: "They're clearly damaged or pulling away", score: 3 },
+      { label: "I don't have gutters / can't tell", score: 1 }
+    ],
+    notes: {
+      0: "Solid gutters help protect your roof and foundation. Good shape.",
+      1: "Minor gutter wear is normal but keep monitoring for changes.",
+      2: "Damaged gutters can cause water to back up under your roofline, accelerating damage.",
+      3: "Gutters play a bigger role than most people think. Worth getting a professional look."
+    }
+  },
+  {
+    text: "Overall, how worried are you about your roof right now?",
+    multi: false,
+    options: [
+      { label: "Not worried at all", score: 0 },
+      { label: "A little concerned", score: 1 },
+      { label: "Pretty worried", score: 2 },
+      { label: "Very worried — something is definitely wrong", score: 3 }
+    ],
+    notes: {
+      0: "Peace of mind is valuable. An annual check-up keeps it that way.",
+      1: "Trust your instincts — even a little concern is worth investigating.",
+      2: "If you're worried, there's usually a reason. A free inspection can give you clarity.",
+      3: "Your gut is telling you something. Let a professional confirm what's going on."
+    }
+  }
+];
+
+// ── State ──
+let currentQ = 0;
+let answers = Array(questions.length).fill(null);
+// For multi-select, answers[3] will be an array of selected indices
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function startQuiz() {
+  currentQ = 0;
+  answers = Array(questions.length).fill(null);
+  answers[3] = []; // multi-select default
+  renderQuestion();
+  showScreen('screen-questions');
+}
+
+function renderQuestion() {
+  const q = questions[currentQ];
+  document.getElementById('q-current').textContent = currentQ + 1;
+  document.getElementById('progress-fill').style.width = ((currentQ + 1) / 6 * 100) + '%';
+  document.getElementById('q-text').textContent = q.text;
+  document.getElementById('btn-back').style.visibility = currentQ === 0 ? 'hidden' : 'visible';
+
+  const container = document.getElementById('answer-options');
+  container.innerHTML = '';
+
+  q.options.forEach((opt, i) => {
+    const card = document.createElement('button');
+    card.className = 'answer-card' + (q.multi ? ' multi' : '');
+    card.innerHTML = '<div class="check-circle"></div><span>' + opt.label + '</span>';
+
+    // Check if selected
+    if (q.multi) {
+      if (answers[currentQ] && answers[currentQ].includes(i)) card.classList.add('selected');
+    } else {
+      if (answers[currentQ] === i) card.classList.add('selected');
+    }
+
+    card.addEventListener('click', () => selectAnswer(i));
+    container.appendChild(card);
+  });
+
+  updateNextButton();
+}
+
+function selectAnswer(idx) {
+  const q = questions[currentQ];
+
+  if (q.multi) {
+    if (!answers[currentQ]) answers[currentQ] = [];
+    const opt = q.options[idx];
+
+    if (opt.exclusive) {
+      // "None of these" clears all others
+      answers[currentQ] = [idx];
+    } else {
+      // Remove exclusive option if present
+      const exclusiveIdx = q.options.findIndex(o => o.exclusive);
+      answers[currentQ] = answers[currentQ].filter(i => i !== exclusiveIdx);
+
+      if (answers[currentQ].includes(idx)) {
+        answers[currentQ] = answers[currentQ].filter(i => i !== idx);
+      } else {
+        answers[currentQ].push(idx);
+      }
+    }
+    renderQuestion();
+  } else {
+    answers[currentQ] = idx;
+    renderQuestion();
+    // Auto-advance after a brief delay for single-select
+    setTimeout(() => nextQuestion(), 300);
+  }
+}
+
+function updateNextButton() {
+  const q = questions[currentQ];
+  const btn = document.getElementById('btn-next');
+  let hasAnswer = false;
+
+  if (q.multi) {
+    hasAnswer = answers[currentQ] && answers[currentQ].length > 0;
+  } else {
+    hasAnswer = answers[currentQ] !== null;
+  }
+
+  btn.style.display = hasAnswer ? 'inline-block' : 'none';
+}
+
+function nextQuestion() {
+  const q = questions[currentQ];
+  let hasAnswer = q.multi
+    ? (answers[currentQ] && answers[currentQ].length > 0)
+    : (answers[currentQ] !== null);
+
+  if (!hasAnswer) return;
+
+  if (currentQ < questions.length - 1) {
+    currentQ++;
+    if (questions[currentQ].multi && !Array.isArray(answers[currentQ])) {
+      answers[currentQ] = [];
+    }
+    renderQuestion();
+    // Re-trigger animation
+    const card = document.querySelector('.question-card');
+    card.style.animation = 'none';
+    card.offsetHeight;
+    card.style.animation = 'fadeUp 0.35s ease';
+  } else {
+    showScreen('screen-gate');
+  }
+}
+
+function prevQuestion() {
+  if (currentQ > 0) {
+    currentQ--;
+    renderQuestion();
+    const card = document.querySelector('.question-card');
+    card.style.animation = 'none';
+    card.offsetHeight;
+    card.style.animation = 'fadeUp 0.35s ease';
+  }
+}
+
+function submitGate(e) {
+  e.preventDefault();
+  const name = document.getElementById('gate-name').value.trim();
+  const phone = document.getElementById('gate-phone').value.trim();
+  const email = document.getElementById('gate-email').value.trim();
+  const address = document.getElementById('gate-address').value.trim();
+
+  if (!name || !phone || !email || !address) return;
+
+  // TODO: Send lead data to CRM / webhook here
+  console.log('Lead captured:', { name, phone, email, address });
+
+  showResults();
+}
+
+function calcScore() {
+  let total = 0;
+  answers.forEach((ans, qi) => {
+    const q = questions[qi];
+    if (q.multi && Array.isArray(ans)) {
+      ans.forEach(idx => { total += q.options[idx].score; });
+    } else if (typeof ans === 'number') {
+      total += q.options[ans].score;
+    }
+  });
+  return total;
+}
+
+function getTier(score) {
+  if (score <= 4) return {
+    name: "Your Roof Looks Healthy",
+    color: "var(--green)",
+    desc: "Great news — your roof isn't showing obvious warning signs. Keep doing what you're doing.",
+    tip: "Tip: Schedule an annual check-up to catch small issues early."
+  };
+  if (score <= 10) return {
+    name: "A Few Things to Watch",
+    color: "var(--yellow)",
+    desc: "Your roof has some yellow flags. Nothing to panic about, but a couple of your answers suggest it's worth a closer look.",
+    tip: "Most of what you're describing is common in Oklahoma roofs and often caught early with a professional inspection."
+  };
+  if (score <= 16) return {
+    name: "Your Roof Needs Attention",
+    color: "var(--orange)",
+    desc: "Several of your answers point to developing issues. Oklahoma weather is tough on roofs, and what you're describing could get worse if left alone.",
+    tip: "A professional inspection now could save you thousands later."
+  };
+  return {
+    name: "Action Needed",
+    color: "var(--red)",
+    desc: "Your answers flag significant concerns. Based on what you're describing, your roof likely needs professional attention soon.",
+    tip: "Don't wait — small problems become expensive ones fast in Oklahoma's climate."
+  };
+}
+
+function showResults() {
+  const score = calcScore();
+  const tier = getTier(score);
+
+  document.getElementById('score-num').textContent = score;
+  const badge = document.getElementById('score-badge');
+  badge.style.background = tier.color;
+
+  document.getElementById('tier-name').textContent = tier.name;
+  document.getElementById('tier-name').style.color = tier.color;
+  document.getElementById('tier-desc').innerHTML = tier.desc + '<br><br><em>' + tier.tip + '</em>';
+
+  // Health bar marker
+  const pct = Math.min((score / 24) * 100, 100);
+  setTimeout(() => {
+    document.getElementById('health-marker').style.left = pct + '%';
+  }, 200);
+
+  // Breakdown
+  const breakdownEl = document.getElementById('breakdown');
+  breakdownEl.innerHTML = '';
+  questions.forEach((q, qi) => {
+    const ans = answers[qi];
+    let answerText = '';
+    let noteKey;
+
+    if (q.multi && Array.isArray(ans)) {
+      answerText = ans.map(i => q.options[i].label).join(', ') || 'No selection';
+      // Show note for each selected item
+      const notes = ans.map(i => q.notes[i]).join(' ');
+      const item = document.createElement('div');
+      item.className = 'breakdown-item';
+      item.innerHTML =
+        '<div class="breakdown-q">Q' + (qi + 1) + ': ' + q.text + '</div>' +
+        '<div class="breakdown-a">' + answerText + '</div>' +
+        '<div class="breakdown-note">' + notes + '</div>';
+      breakdownEl.appendChild(item);
+    } else {
+      answerText = typeof ans === 'number' ? q.options[ans].label : 'No selection';
+      const note = typeof ans === 'number' ? q.notes[ans] : '';
+      const item = document.createElement('div');
+      item.className = 'breakdown-item';
+      item.innerHTML =
+        '<div class="breakdown-q">Q' + (qi + 1) + ': ' + q.text + '</div>' +
+        '<div class="breakdown-a">' + answerText + '</div>' +
+        '<div class="breakdown-note">' + note + '</div>';
+      breakdownEl.appendChild(item);
+    }
+  });
+
+  showScreen('screen-results');
+}
+</script>
+
+</body>
+</html>
